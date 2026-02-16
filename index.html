@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Cipher Tool</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-slate-100 min-h-screen">
+
+<!-- HEADER -->
+<header class="bg-blue-600 text-white shadow-lg">
+
+<div class="max-w-5xl mx-auto flex items-center gap-4 p-4">
+
+<!-- LOGO PLACE -->
+<img src="logo.png" alt="School Logo" class="w-14 h-14 bg-white rounded p-1">
+
+<!-- PROJECT NAME -->
+<div>
+
+<h1 class="text-2xl font-bold">
+Caesar Cipher Encryption System
+</h1>
+
+<p class="text-sm">
+ITE Year 2 Project
+</p>
+
+</div>
+
+</div>
+
+</header>
+
+
+<!-- MAIN -->
+<main class="max-w-4xl mx-auto mt-8 bg-white shadow-lg rounded-xl p-6">
+
+<h2 class="text-xl font-bold text-center text-blue-600 mb-6">
+
+Encryption & Decryption Tool
+
+</h2>
+
+
+<!-- INPUT -->
+<input
+id="plaintext"
+type="text"
+placeholder="Enter text here..."
+class="w-full border p-3 rounded-lg mb-4 focus:ring-2 focus:ring-blue-400 outline-none"
+/>
+
+
+<!-- BUTTON -->
+<div class="flex gap-4 mb-6">
+
+<button
+onclick="encryptText()"
+class="bg-blue-500 hover:bg-blue-600 text-white w-full py-2 rounded-lg"
+>
+Encrypt
+</button>
+
+<button
+onclick="decryptText()"
+class="bg-green-500 hover:bg-green-600 text-white w-full py-2 rounded-lg"
+>
+Decrypt
+</button>
+
+</div>
+
+
+<!-- RESULT TABLE -->
+<div id="result"></div>
+
+
+<!-- FINAL OUTPUT -->
+<div class="mt-6">
+
+<h3 class="font-bold text-lg">
+Final Result:
+</h3>
+
+<div id="finalResult" class="bg-gray-100 p-4 rounded-lg mt-2 text-xl font-bold text-blue-600">
+-
+</div>
+
+</div>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
